@@ -25,6 +25,7 @@ fig5:
   C: synthesis_all/All Subjects_RTdiffURprop_opt
   D: sim/SIM_RTdiffURprop_lr_ur_frus
   E: synthesis_all/All Subjects_rtAcc_no_opt
+  F: sim/RT_ACC
 fig6:
   A: sim/Kiani_Acc
   B: sim/Kiani_UR

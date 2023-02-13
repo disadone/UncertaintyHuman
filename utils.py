@@ -1001,7 +1001,7 @@ class AnalysisIterData(AnalysisData):
             label_diff(ax,l02,[0,2],maxvar,shrink_x=0.025,base_y=0.2,increment_y=0.05)
             label_diff(ax,l12,[1,2],maxvar,shrink_x=0.025,base_y=0.05,increment_y=0.05)
         
-    def plot_RTdiffURprop(self,ax,data=['no-up lr','opt-up lr','opt-up'],remove_up026=False,stat=False):
+    def plot_RTdiffURprop(self,ax,data=['no-up lr','opt-up lr','opt-up'],remove_up026=False,stat=False,linefit=False):
         """
         RT difference between std and opt is positive realted to UR proportion
         """
@@ -1027,7 +1027,8 @@ class AnalysisIterData(AnalysisData):
         ax.scatter(rt_diff,UR_prop,color='k')
         X=sm.add_constant(rt_diff)
         model=sm.OLS(UR_prop,X).fit(disp=0)
-        ax.plot(rt_diff,model.predict(X),color='k')
+        if linefit:
+            ax.plot(rt_diff,model.predict(X),color='k')
     
     def plot_SlopediffURprop(self,ax,data=['no-up lr','opt-up lr','opt-up up'],remove_up026=False,stat=False):
         """
