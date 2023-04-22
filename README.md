@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/601046639.svg)](https://zenodo.org/badge/latestdoi/601046639)
 
-Code for "Optimal policy for uncertainty estimation concurrent with decision making",Cell Reports,2023
+Code for "Optimal policy for uncertainty estimation concurrent with decision making", *Cell Reports*, 2023
 
 Figure*.ipynb files can directly run to replicate the figures.
 
